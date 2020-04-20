@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "browser-preview - localhost",
+            "type": "browser-preview",
+            "request": "launch",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+          "name": "chrome - localhost",
+          "type": "chrome",
+          "request": "launch",
+          "url": "http://localhost:4200",
+          "webRoot": "${workspaceFolder}"
+      },
+    ]
+}
