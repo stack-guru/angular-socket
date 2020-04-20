@@ -14,12 +14,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngIf="data | async as sensor">
         <td class="border px-4 py-2 border-gray-600">
-          {{ data && data[0] | date: 'mediumTime' }}
+          {{ sensor[0] | date: 'mediumTime' }}
         </td>
-        <td class="border px-4 py-2 border-gray-600">{{ data && data[1] }}</td>
-        <td class="border px-4 py-2 border-gray-600">{{ data && data[2] }}</td>
+        <td class="border px-4 py-2 border-gray-600">{{ sensor[1] }}</td>
+        <td class="border px-4 py-2 border-gray-600">{{ sensor[2] }}</td>
       </tr>
     </tbody>
   </table>
